@@ -80,3 +80,33 @@ function updateWishlist() {
         wishlistItems.appendChild(li);
     });
 }
+
+
+// Existing JavaScript code
+
+function init() {
+    // Existing initialization code
+    adjustLayout(); // Call layout adjustment initially
+    window.addEventListener('resize', adjustLayout); // Add resize event listener
+}
+
+function adjustLayout() {
+    const width = window.innerWidth;
+    if (width < 768) {
+        // Mobile-specific adjustments
+        document.body.style.backgroundColor = 'lightblue'; // Example
+        // Other mobile-specific changes
+    } else {
+        // Desktop adjustments
+        document.body.style.backgroundColor = 'white'; // Example
+        // Other desktop-specific changes
+    }
+}
+
+// Example for handling touch events
+document.addEventListener('touchstart', function(e) {
+    // Handle touch events
+}, false);
+
+// Call init to set up the initial state
+init();
