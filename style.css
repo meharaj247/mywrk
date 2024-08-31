@@ -1,20 +1,51 @@
-/* Global Styles */
-
-* {
+@media(max-width: 786px) {
+    .body {
+      font-size: 14px;
+    }
+    .header {
+      display: block;
+    }
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    header {
+      flex-direction: column;
+    }
+    header nav {
+      display: none;
+    }
+    .search-bar {
+      flex-direction: column;
+    }
+    .search-bar input {
+      width: 100%;
+    }
+    .search-bar button {
+      width: 100%;
+    }
+    .product-list {
+      justify-content: center;
+    }
+    .product {
+      margin: 10px;
+    }
+    section#cart {
+      height: auto;
+    }
+  }
+  
+  .body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 1100px;
+    overflow-x: hidden;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #fff;
-  }
-  
-  /* Header Styles */
   
   header {
     max-width: 100%;
@@ -44,8 +75,6 @@
     text-decoration: none;
   }
   
-  /* Search Bar Styles */
-  
   .search-bar {
     display: flex;
   }
@@ -65,8 +94,6 @@
     margin-left: 5px;
   }
   
-  /* Main Content Styles */
-  
   main {
     padding: 20px;
   }
@@ -75,7 +102,31 @@
     color: #333;
   }
   
-  /* Product List Styles */
+  .product img {
+    width: 100%;
+  }
+  
+  button {
+    background-color: #070000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #cart, #profile, #wishlist {
+    margin-top: 20px;
+  }
+  
+  #cart ul, #wishlist ul {
+    list-style: none;
+    padding: 0;
+  }
   
   .product-list {
     display: flex;
@@ -88,76 +139,43 @@
     margin: 36px;
     width: 170px;
     text-align: center;
+    word-spacing: 3px;
   }
-  
-  .product img {
-    width: 100%;
-  }
-  
-  /* Button Styles */
-  
-  button {
-    background-color: #000a0a;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-  
-  /* Section Styles */
   
   section#main {
+    text-align: center;
+    display: block;
     background-color: white;
+    letter-spacing: 2px;
+    word-spacing: 6px;
     padding-bottom: 70px;
     transition: 3s;
   }
   
   section#products {
     background-color: white;
-    width: 1200px;
+    width: 100%;
     height: auto;
     padding-right: 40px;
   }
   
   section#cart {
-    width: 1100px;
-    height: 700px;
+    width: 100%;
+    height: auto;
     text-align: left;
+    word-spacing: 10px;
     background-color: white;
   }
   
   section#aboutus {
     line-height: 1.5;
-    width: 1100px;
-    height: 600px;
+    width: 100%;
+    height: auto;
   }
   
   section#wishlist {
-    width: 1100px;
-    height: 600px;
+    width: 100%;
+    height: auto;
   }
   
-  /* Media Query */
-  
-  @media (max-width: 786px) {
-    .body {
-      font-size: 14px;
-    }
-    .header {
-      display: block;
-    }
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
   
