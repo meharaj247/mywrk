@@ -1,0 +1,182 @@
+
+
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1100px;
+ overflow-x: hidden;
+}
+
+header {
+    max-width: 1500px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+
+
+
+.product img {
+    width: 1000px;
+}
+
+button {
+    background-color: #070000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#cart, #profile, #wishlist {
+    margin-top: 20px;
+}
+
+#cart ul, #wishlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 5px solid #020000;
+    padding: 15px;
+    margin: 36px;
+    width: 170px;
+    text-align: center;
+    word-spacing: 3px;
+    
+    
+}
+
+
+.product img {
+    width: 100%;
+}
+
+button {
+    background-color: #000a0a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#cart, #profile, #wishlist {
+    margin-top: 20px;
+}
+
+#cart ul, #wishlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+section#main
+{
+    
+text-align: 500px;
+display:block;
+background-color:white;
+letter-spacing: 2px;
+word-spacing: 6px;
+padding-bottom: 70px;
+transition: 3s;
+}
+section#products
+{
+
+    background-color:white;
+    width:1200px;
+    height:auto;
+    padding-right: 40px;
+
+    
+}
+section#cart
+{
+width: 1100px;
+height: 700px;
+text-align:left;
+word-spacing: 10px;
+background-color:white;
+}
+
+section#aboutus
+{
+    line-height: 1cm;
+    width:1100px;
+    height:600px
+}
+section#wishlist
+{
+    width:1100px;
+    height:600px;
+}
+
