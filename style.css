@@ -1,51 +1,31 @@
 @media(max-width: 786px) {
-    .body {
-      font-size: 14px;
+    .body{
+        font-size: 14px;
     }
-    .header {
-      display: block;
-    }
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    header nav {
-      display: none;
-    }
-    .search-bar {
-      flex-direction: column;
-      align-items: center;
-    }
-    .search-bar input {
-      width: 100%;
-    }
-    .search-bar button {
-      width: 100%;
-    }
-    .product-list {
-      justify-content: center;
-    }
-    .product {
-      margin: 10px;
-    }
-    section#cart {
-      height: auto;
-    }
-  }
-  
-  .body {
+    
+.header{
+    display:block;
+}
+
+.container
+{
+    width:100%;
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+}
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
-  }
-  
-  header {
+ overflow-x: hidden;
+}
+
+header {
     max-width: 100%;
     background-color: #333;
     color: white;
@@ -53,127 +33,165 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  header .logo {
+}
+
+header .logo {
     font-size: 24px;
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
     list-style: none;
     display: flex;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     margin: 0 10px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
-  }
-  
-  .search-bar {
+}
+
+.search-bar {
     display: flex;
-  }
-  
-  .search-bar input {
+}
+
+.search-bar input {
     padding: 5px;
     border: none;
     border-radius: 4px;
-  }
-  
-  .search-bar button {
+}
+
+.search-bar button {
     padding: 5px 10px;
     border: none;
     background-color: #555;
     color: white;
     border-radius: 4px;
     margin-left: 5px;
-  }
-  
-  main {
+}
+
+main {
     padding: 20px;
-  }
-  
-  h2 {
+}
+
+h2 {
     color: #333;
-  }
-  
-  .product img {
+}
+
+
+
+
+.product img {
     width: 100%;
-  }
-  
-  button {
+}
+
+button {
     background-color: #070000;
     color: white;
     border: none;
     padding: 5px 10px;
     margin-top: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #555;
-  }
-  
-  #cart, #profile, #wishlist {
+}
+
+#cart, #profile, #wishlist {
     margin-top: 20px;
-  }
-  
-  #cart ul, #wishlist ul {
+}
+
+#cart ul, #wishlist ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .product-list {
+}
+
+.product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .product {
+}
+
+.product {
     border: 5px solid #020000;
     padding: 15px;
-    margin: 10px;
+    margin: 36px;
     width: 170px;
     text-align: center;
     word-spacing: 3px;
-  }
-  
-  section#main {
-    text-align: center;
-    display: block;
-    background-color: white;
-    letter-spacing: 2px;
-    word-spacing: 6px;
-    padding-bottom: 70px;
-    transition: 3s;
-  }
-  
-  section#products {
-    background-color: white;
+    
+    
+}
+
+
+.product img {
     width: 100%;
-    height: auto;
+}
+
+button {
+    background-color: #000a0a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#cart, #profile, #wishlist {
+    margin-top: 20px;
+}
+
+#cart ul, #wishlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+section#main
+{
+    
+text-align: 500px;
+display:block;
+background-color:white;
+letter-spacing: 2px;
+word-spacing: 6px;
+padding-bottom: 70px;
+transition: 3s;
+}
+section#products
+{
+
+    background-color:white;
+    width:100%;
+    height:auto;
     padding-right: 40px;
-  }
-  
-  section#cart {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    word-spacing: 10px;
-    background-color: white;
-  }
-  
-  section#aboutus {
-    line-height: 1.5;
-    width: 100%;
-    height: auto;
-  }
-  
-  section#wishlist {
-    width: 100%;
-    height: auto;
-  }
-  
+
+    
+}
+section#cart
+{
+width: 100%;
+height: auto;
+text-align:left;
+word-spacing: 10px;
+background-color:white;
+}
+
+section#aboutus
+{
+    line-height: 1cm;
+    width:100%;
+    height:auto;
+}
+section#wishlist
+{
+    width:100%;
+    height:auto;
+}

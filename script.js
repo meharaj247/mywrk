@@ -19,14 +19,14 @@ function updateCart() {
 
     cart.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = `${item.product} - ₹${item.price.toLocaleString('en-IN')}`;
+        li.textContent = ${item.product} - ₹${item.price.toLocaleString('en-IN')};
         cartItems.appendChild(li);
         subtotal += item.price;
     });
 
-    cartTotal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
-    shippingCost.textContent = `₹${shippingFee}`;
-    finalTotal.textContent = `₹${(subtotal + shippingFee).toLocaleString('en-IN')}`;
+    cartTotal.textContent = ₹${subtotal.toLocaleString('en-IN')};
+    shippingCost.textContent = ₹${shippingFee};
+    finalTotal.textContent = ₹${(subtotal + shippingFee).toLocaleString('en-IN')};
 }
 
 
@@ -43,11 +43,11 @@ function checkout() {
         return;
     }
 
-    const cartSummary = cart.map(item => `${item.product} - ₹${item.price.toLocaleString('en-IN')}`).join('\n');
+    const cartSummary = cart.map(item => ${item.product} - ₹${item.price.toLocaleString('en-IN')}).join('\n');
     const subtotal = cart.reduce((sum, item) => sum + item.price, 0);
     const total = subtotal + shippingFee;
 
-    const confirmation = confirm(`Your order:\n\n${cartSummary}\n\nSubtotal: ₹${subtotal.toLocaleString('en-IN')}\nShipping Fee: ₹${shippingFee}\nTotal: ₹${total.toLocaleString('en-IN')}\n\nPayment Method: ${paymentMethod === '1' ? 'Cash on Delivery' : 'Online Payment'}\n\nDo you want to proceed to checkout?`);
+    const confirmation = confirm(Your order:\n\n${cartSummary}\n\nSubtotal: ₹${subtotal.toLocaleString('en-IN')}\nShipping Fee: ₹${shippingFee}\nTotal: ₹${total.toLocaleString('en-IN')}\n\nPayment Method: ${paymentMethod === '1' ? 'Cash on Delivery' : 'Online Payment'}\n\nDo you want to proceed to checkout?);
 
     if (confirmation) {
         if (paymentMethod === '2') {
