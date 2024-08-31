@@ -1,6 +1,21 @@
 
+@media(max-width:600px) {
+    .body{
+        font-size: 14px;
+    }
+    
 
 
+.container
+{
+    width:100%;
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+}
 .body {
     font-family: Arial, sans-serif;
     margin: 0;
