@@ -1,24 +1,21 @@
-
-html{
-    height: -webkit-fill-available;
-} 
-.body {
-    height: -webkit-fill-available;
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100bh;
-    display: flex;
- overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 header {
-    max-width: 100%;
     background-color: #333;
     color: white;
     padding: 10px 20px;
+    width: 100%;
+    height:56px ;
     display: flex;
+    text-align:left;
+    word-spacing: 2px;
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -43,6 +40,7 @@ header nav ul li a {
 
 .search-bar {
     display: flex;
+    margin-left: 200px;
 }
 
 .search-bar input {
@@ -61,17 +59,12 @@ header nav ul li a {
 }
 
 main {
-    flex: 1;
-    overflow:scroll;
     padding: 20px;
 }
 
 h2 {
     color: #333;
 }
-
-
-
 
 .product img {
     width: 100%;
@@ -102,86 +95,49 @@ button:hover {
 .product-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product {
     border: 5px solid #020000;
     padding: 15px;
-    margin: 36px;
-    width: 170px;
+    margin: 20px;
+    width: calc(33.333% - 40px);
     text-align: center;
     word-spacing: 3px;
-    
-    
 }
 
+#main {
+    text-align: center;
+    background-color: white;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    padding-bottom: 70px;
+    transition: 3s;
+}
 
-.product img {
+#products {
+    background-color: white;
     width: 100%;
-}
-
-button {
-    background-color: #000a0a;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-#cart, #profile, #wishlist {
-    margin-top: 20px;
-}
-
-#cart ul, #wishlist ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-
-section#main
-{
-    
-text-align: 500px;
-display:block;
-background-color:white;
-letter-spacing: 2px;
-word-spacing: 6px;
-padding-bottom: 70px;
-transition: 3s;
-}
-section#products
-{
-
-    background-color:white;
-    width:100%;
-    height:auto;
+    height: auto;
     padding-right: 40px;
-
-    
-}
-section#cart
-{
-width: 100%;
-height: auto;
-text-align:left;
-word-spacing: 10px;
-background-color:white;
 }
 
-section#aboutus
-{
+#cart {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    word-spacing: 10px;
+    background-color: white;
+}
+
+#aboutus {
     line-height: 1cm;
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
 }
-section#wishlist
-{
-    width:100%;
-    height:auto;
-}
+
+#wishlist {
+    width: 100%;
+    height: auto;
+} 

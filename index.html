@@ -5,170 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewelry Store</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Ensure JavaScript is loaded after HTML -->
 </head>
 <body>
     <!-- Header -->
     <header>
-        
-        <div class="logo">Jewelry Store</div>
+        <div class="logo" style="margin-top: 15px; margin-bottom: 10px;">Jewelry Store</div>
         <nav>
             <ul>
-                <li style="margin-left: 200px;"><a  href="#products">Products</a></li>
+                <li style="margin-left: 250px;"><a href="#products">Products</a></li>
                 <li><a href="#cart">Cart</a></li>
-                <li><a href="#aboutus">about us</a></li>
+                <li><a href="#aboutus">About Us</a></li>
                 <li><a href="#wishlist">Wishlist</a></li>
             </ul>
         </nav>
-        <div style="margin-left: 200px;" class="search-bar">
+        <div style="margin-left: 200px; margin-top: 10px; margin-right: 30px;" class="search-bar">
             <input type="text" placeholder="Search...">
             <button>Search</button>
         </div>
-        
     </header>
+
     <main>
-    
-        <section id="main">
-            
-            <h1 style="margin-left: 500px;"><strong>INARA  JEWELS </strong></h1>
-             <h3  style="margin-left: 10px;">Every Piece Of Jewellry Tells A Story</h3>
-            <img src="inar.jpg">
+        <!-- Main Section -->
+        <section id="main" class="container">
+            <h1 style="margin-left: 80px;"><strong>INARA JEWELS</strong></h1>
+            <h3 style="margin-left: 30px;">Every Piece Of Jewelry Tells A Story</h3>
+            <img src="inar.jpg" alt="Main Image">
         </section>
+
+        <!-- Products Section -->
         <section id="products">
             <h2>Our Favourite</h2>
             <div class="product-list">
-                <!-- Product Example -->
+                <!-- Product 1 -->
                 <div class="product">
-                    <img src="minimalist-jewelry-mejuri-2-2-edited.jpeg" alt="Product 1">
-                    <h3 >Gold RING</h3>
+                    <img src="minimalist-jewelry-mejuri-2-2-edited.jpeg" alt="Gold Ring">
+                    <h3>Gold RING</h3>
                     <p>200</p>
-                    <button onclick="addToCart('Gold RING',200)">Add to Cart</button>
+                    <button onclick="addToCart('Gold RING', 200)">Add to Cart</button>
                     <button onclick="addToWishlist('Gold RING')">Add to Wishlist</button>
                 </div>
+                <!-- Product 2 -->
                 <div class="product">
-                    <img src="images (3).jpg" alt="Product 2">
+                    <img src="images (3).jpg" alt="Set of Love">
                     <h3>SET OF LOVE</h3>
                     <p>500</p>
                     <button onclick="addToCart('SET OF LOVE', 500)">Add to Cart</button>
                     <button onclick="addToWishlist('SET OF LOVE')">Add to Wishlist</button>
                 </div>
-            
-            
-            <div class="product">
-                <img src="0000s_0042__MP_AOE3896_1200x.webp" alt="Product 2">
-                <h3>BRACELET</h3>
-                <p>300</p>
-                <button onclick="addToCart('BRACELET', 300)">Add to Cart</button>
-                <button onclick="addToWishlist('BRACELET')">Add to Wishlist</button>
+                <!-- Product 3 -->
+                <div class="product">
+                    <img src="0000s_0042__MP_AOE3896_1200x.webp" alt="Bracelet">
+                    <h3>BRACELET</h3>
+                    <p>300</p>
+                    <button onclick="addToCart('BRACELET', 300)">Add to Cart</button>
+                    <button onclick="addToWishlist('BRACELET')">Add to Wishlist</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product">
+                    <img src="ring_collection_rani_and_co_1_567ceb6e-6f88-4721-a424-409504aba351_1080x.webp" alt="INARA'S SPL">
+                    <h3>INARA'S SPL</h3>
+                    <p>400</p>
+                    <button onclick="addToCart('INARA\'S SPL', 400)">Add to Cart</button>
+                    <button onclick="addToWishlist('INARA\'S SPL')">Add to Wishlist</button>
+                </div>
+                <!-- Product 5 -->
+                <div class="product">
+                    <img src="286881584_1221434935348814_4868147812537782427_n-927x1024.jpg" alt="Pearl Ring">
+                    <h3>PEARL RING</h3>
+                    <p>200</p>
+                    <button onclick="addToCart('PEARL RING', 200)">Add to Cart</button>
+                    <button onclick="addToWishlist('PEARL RING')">Add to Wishlist</button>
+                </div>
+                <!-- Product 6 -->
+                <div class="product">
+                    <img src="images (6).jpg" alt="Gold Chain Set">
+                    <h3>GOLD CHAIN SET</h3>
+                    <p>600</p>
+                    <button onclick="addToCart('GOLD CHAIN SET', 600)">Add to Cart</button>
+                    <button onclick="addToWishlist('GOLD CHAIN SET')">Add to Wishlist</button>
+                </div>
+                <!-- Product 7 -->
+                <div class="product">
+                    <img src="earring.jpg" alt="Black Love">
+                    <h3>BLACK LOVE</h3>
+                    <p>500</p>
+                    <button onclick="addToCart('BLACK LOVE', 500)">Add to Cart</button>
+                    <button onclick="addToWishlist('BLACK LOVE')">Add to Wishlist</button>
+                </div>
+                <!-- Product 8 -->
+                <div class="product">
+                    <img src="dusky.jpg" alt="Dark Dusky">
+                    <h3>DARK DUSKY</h3>
+                    <p>800</p>
+                    <button onclick="addToCart('DARK DUSKY', 800)">Add to Cart</button>
+                    <button onclick="addToWishlist('DARK DUSKY')">Add to Wishlist</button>
+                </div>
+                <!-- Product 9 -->
+                <div class="product">
+                    <img src="download.jpg" alt="Minimal Ring">
+                    <h3>MINIMAL RING</h3>
+                    <p>300</p>
+                    <button onclick="addToCart('MINIMAL RING', 300)">Add to Cart</button>
+                    <button onclick="addToWishlist('MINIMAL RING')">Add to Wishlist</button>
+                </div>
+                <!-- Product 10 -->
+                <div class="product">
+                    <img src="silver.jpg" alt="Stunning Silver">
+                    <h3>STUNNING SILVER</h3>
+                    <p>700</p>
+                    <button onclick="addToCart('STUNNING SILVER', 700)">Add to Cart</button>
+                    <button onclick="addToWishlist('STUNNING SILVER')">Add to Wishlist</button>
+                </div>
+                <!-- Product 11 -->
+                <div class="product">
+                    <img src="anklet.avif" alt="Anklet">
+                    <h3>ANKLET</h3>
+                    <p>500</p>
+                    <button onclick="addToCart('ANKLET', 500)">Add to Cart</button>
+                    <button onclick="addToWishlist('ANKLET')">Add to Wishlist</button>
+                </div>
+                <!-- Product 12 -->
+                <div class="product">
+                    <img src="76b7906b2ace2f43bac5e2693ff25d68.jpg" alt="Perfect Piercing Earring">
+                    <h3>PERFECT PIERCING EARRING</h3>
+                    <p>800</p>
+                    <button onclick="addToCart('PERFECT PIERCING EARRING', 800)">Add to Cart</button>
+                    <button onclick="addToWishlist('PERFECT PIERCING EARRING')">Add to Wishlist</button>
+                </div>
             </div>
-            <div class="product">
-                <img src="ring_collection_rani_and_co_1_567ceb6e-6f88-4721-a424-409504aba351_1080x.webp" alt="Product 2">
-                <h3>INARA'S SPL</h3>
-                <p>400</p>
-                <button onclick="addToCart('INARAS SPL', 400)">Add to Cart</button>
-                <button onclick="addToWishlist('INARAS SPL')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="286881584_1221434935348814_4868147812537782427_n-927x1024.jpg" alt="Product 2">
-                <h3>PEARL RING</h3>
-                <p>200</p>
-                <button onclick="addToCart('PEARL RING', 200)">Add to Cart</button>
-                <button onclick="addToWishlist('PEARL RING')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="images (6).jpg"  alt="Product 2">
-                <h3>GOLD CHAIN SET</h3>
-                <p>600</p>
-                <button onclick="addToCart('GOLD CHAIN SET ', 600)">Add to Cart</button>
-                <button onclick="addToWishlist('GOLD CHAIN SET')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="earring.jpg"  alt="Product 2">
-                <h3>BLACK LOVE</h3>
-                <p>500</p>
-                <button onclick="addToCart('BLACK LOVE', 500)">Add to Cart</button>
-                <button onclick="addToWishlist('BLACK LOVE')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="dusky.jpg"  alt="Product 2">
-                <h3>DARK DUSKY</h3>
-                <p>800</p>
-                <button onclick="addToCart('DARK DUSKY', 800)">Add to Cart</button>
-                <button onclick="addToWishlist('DARK DUSKY')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="download.jpg"  alt="Product 2">
-                <h3>MINIMAL RING</h3>
-                <p>300</p>
-                <button onclick="addToCart('MINIMAL RING', 500)">Add to Cart</button>
-                <button onclick="addToWishlist('MINIMAL RING')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="silver.jpg"  alt="Product 2">
-                <h3>STUNNING SILVER</h3>
-                <p>700</p>
-                <button onclick="addToCart('STUNNING SILVER', 700)">Add to Cart</button>
-                <button onclick="addToWishlist('STUNNING SILVER')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="anklet.avif" Product 2">
-                <h3>ANKLET</h3>
-                <p>500</p>
-                <button onclick="addToCart('ANKLET', 500)">Add to Cart</button>
-                <button onclick="addToWishlist('ANKLET')">Add to Wishlist</button>
-            </div>
-            <div class="product">
-                <img src="76b7906b2ace2f43bac5e2693ff25d68.jpg"  alt="Product 2">
-                <h3>PERFECT PIERCING EARRING</h3>
-                <p>800</p>
-                <button onclick="addToCart('PERFECT PIERCING EARRING', 800)">Add to Cart</button>
-                <button onclick="addToWishlist('PERFECT PIERCING EARRING')">Add to Wishlist</button>
-            </div>
-            
-            
         </section>
 
         <!-- Cart Section -->
         <section id="cart">
             <h1 style="margin-left:500px;">THANKS FOR SHOPPING</h1>
             <h2>Your Cart</h2>
-            <ul id="cart-items">
-                <!-- Cart items will be dynamically added here -->
-            </ul>
+            <ul id="cart-items"></ul> <!-- Cart items will be dynamically added here -->
             <p>Total: $<span id="cart-total">0</span></p>
+            <p>Shipping Fee: $<span id="shipping-cost">30</span></p>
+            <p>Final Total: $<span id="final-total">0</span></p>
             <button onclick="checkout()">Checkout</button>
-        
         </section>
 
-
+        <!-- About Us Section -->
         <section id="aboutus">
             <h1>About Us</h1>
-        <P>Welcome to Jewellery INARA,your premier online destination for exquisite jewelry pieces.<br/> Our mission is to 
-            provide high-quality, elegant, and affordable jewelry that makes you shine.<br/> We're committed to
-             ensuring a seamless shopping experience, with a user-friendly interface, <br/>
-             secure payment options, and exceptional customer service. Browse our curated collection of minimal rings,
-        </br> necklaces, chains, and more, and discover the perfect accessory to elevate your style."
-        </P>
-        <h1>Refund policy</h1>
-        <p>"At Jewellery INARA, we want you to be completely satisfied with your purchase.</br>
-             If for any reason you're not delighted with your jewelry, you can initiate a refund within 30 days
-              of delivery. </br>Please contact our customer service team, and 
-        we'll guide you through the process. Refunds will be processed in the original 
-        payment method, minus any shipping costs</br>.
-         Please note that items must be in their original condition, with tags and packaging intact."
-        </p>
-        </section>
+            <p>Welcome to Jewellery INARA, your premier online destination for exquisite jewelry pieces. 
+                Our mission is to provide high-quality, elegant, and affordable jewelry that makes you shine
+                . We're committed to ensuring a seamless shopping experience, with a user-friendly interface, 
+                secure payment options, and exceptional customer service. Browse our curated collection of minimal rings,
+                 necklaces, chains, and more, and discover the perfect accessory to elevate your style.</p>
+            <h1>Refund Policy</h1>
+            <p>At Jewellery INARA, we want you to be completely satisfied with your purchase.
+                 If for any reason you're not delighted with your jewelry, you can initiate a refund within 30 days of delivery
+                 </p>
+                </section>
 
-        </section>
-
-        <!-- Wishlist Section -->
-        <section id="wishlist">
-            <h2>Your Wishlist</h2>
-            <ul id="wishlist-items">
-                <!-- Wishlist items will be dynamically added here -->
-            </ul>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                <!-- Wishlist Section -->
+                <section id="wishlist">
+                    <h2>Your Wishlist</h2>
+                    <ul id="wishlist-items"></ul> <!-- Wishlist items will be dynamically added here -->
+                </section>
+            </main>
+        
+            <script src="script.js" defer></script> <!-- Ensuring the JavaScript loads at the right time -->
+        </body>
+        </html>
